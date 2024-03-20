@@ -34,16 +34,19 @@ function genBox(content) {
 }
 
 const play = document.getElementById("play"); // prendo il button dall'html tramite id
-console.log(play);
 
 // associo un eventListener al bottone play
 play.addEventListener("click", function () {
   
+  // prendo  
   const result = document.getElementById('result');
+  
   for (let i = 0; i < numList.length; i++) {
     let newBox = genBox(numList[i]);
     console.log(newBox);
     result.append(newBox);
-
+    setTimeout(function(){
+      newBox.className = 'd-none';
+    }, 30 * 1000);
   }
-});
+}, {once: true});
