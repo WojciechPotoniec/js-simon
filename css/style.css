@@ -1,4 +1,6 @@
-div.box{
+div .box{
+    width: 100px;
+    height: 100px;
     background-color: black;
     font-size: 1.5rem;
     color: white;
