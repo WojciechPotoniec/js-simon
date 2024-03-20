@@ -18,6 +18,24 @@ while(List.length < 5){ //condizione di uscita del ciclo
 }
 return List; // mi ritornerà una lista di 5 elementi casuali diversi tra loro
 }
-
 const numList = genNumber(1, 100); // associo una variabile globale alla funzione genNumber()
 console.log(numList);
+
+
+function genBox(){ // creo una funzione per generare un elemento div con classe .box
+  const newEl = document.createElement('div')
+  // console.log(newEl);
+  newEl.classList.add('.box');
+  // console.log(newEl);
+
+  return newEl;
+};
+const newBox = genBox();
+console.log(newBox);
+
+
+const play = document.getElementById('play'); // prendo il button dall'html tramite id
+console.log(play);
+start.addEventListener('click', function(){ // associo un eventListener al bottone play
+
+});
